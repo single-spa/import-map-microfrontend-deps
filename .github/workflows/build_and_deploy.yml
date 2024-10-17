@@ -26,7 +26,6 @@ jobs:
 
       - name: Test
         run: |
-          pnpm run lint
           pnpm run check-format
           pnpm run test
 

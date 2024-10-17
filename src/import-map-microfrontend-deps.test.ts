@@ -29,9 +29,7 @@ test(`writes an import map and dependencies to the file system`, async () => {
     await fs.readFileSync("./dist/deps.importmap", "utf-8"),
   ).toMatchSnapshot();
 
-  expect(
-    await fs.readdirSync("./dist/deps", { recursive: true }),
-  ).toMatchSnapshot();
+  expect(readDirRelative("dist/deps")).toMatchSnapshot();
 });
 
 test(`scoped microfrontend dependencies`, async () => {
@@ -58,8 +56,11 @@ test(`scoped microfrontend dependencies`, async () => {
     await fs.readFileSync("./dist/deps.importmap", "utf-8"),
   ).toMatchSnapshot();
 
-  const files = (await fs.readdirSync("./dist/deps", { recursive: true })).map(
-    (file) => path.relative(process.cwd(), file),
-  );
-  expect(files).toMatchSnapshot();
+  expect(readDirRelative("dist/deps")).toMatchSnapshot();
 });
+
+async function readDirRelative(dir: string) {
+  return fs
+    .readdirSync(dir, { recursive: true })
+    .map((file) => path.relative(process.cwd(), file));
+}

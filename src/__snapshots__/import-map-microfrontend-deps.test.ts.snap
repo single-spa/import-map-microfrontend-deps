@@ -1,0 +1,57 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`scoped microfrontend dependencies 1`] = `
+"{
+  "imports": {
+    "react": "https://cdn.example.com/deps/npm:react@18.3.0/dev.index.js",
+    "react-dom": "https://cdn.example.com/deps/npm:react-dom@18.3.0/dev.index.js"
+  },
+  "scopes": {
+    "https://cdn.example.com/deps/": {
+      "scheduler": "https://cdn.example.com/deps/npm:scheduler@0.23.2/dev.index.js"
+    },
+    "https://cdn.example.com/mfes/org-navbar/": {
+      "react": "https://cdn.example.com/deps/npm:react@17.0.0/dev.index.js",
+      "react-dom": "https://cdn.example.com/deps/npm:react-dom@17.0.0/dev.index.js"
+    }
+  },
+  "integrity": {
+    "https://cdn.example.com/deps/npm:react-dom@18.3.0/_/hZ0Hd0FS.js": "sha384-wtEbXP4B7Gl5fUVIN7xE2UNOcdbjiNLtkyBx4QFpyk6/HQXz0yErwNlwpi+JwKio",
+    "https://cdn.example.com/deps/npm:react-dom@18.3.0/dev.index.js": "sha384-RlA1cs4/0fqgNMuo0f8Af1dWFwZUSBaF6F+UgrlQFXjv0em+AZI16QhG96aNaygO",
+    "https://cdn.example.com/deps/npm:react@18.3.0/dev.index.js": "sha384-FqpzZfi2YeXImQD1xnS/wUNXnRBozQ7uHQmvA6RXbLiApqeXvNFSGQ8coq4Twfmd",
+    "https://cdn.example.com/deps/npm:scheduler@0.23.2/dev.index.js": "sha384-RmHcVPSidbQWYik0CCkT1HaH1CbRQB1Z+/gt66Og9IhFxSqa4PNvCBUneAQl0I1R",
+    "https://cdn.example.com/deps/npm:object-assign@4.1.1/index.js": "sha384-iQp1zoaqIhfUYyYkz3UNk1QeFfmBGgt1Ojq0kZD5Prql1g7fgJVzVgsjDoR65lv8",
+    "https://cdn.example.com/deps/npm:react-dom@17.0.0/cjs/dev.react-dom.development.js": "sha384-jIY+OjbqIxEiVs6PBTAVxNsOEsryYSoAtv8azlFjCBTKRzG2QXQtAHAPeffEYjlR",
+    "https://cdn.example.com/deps/npm:react-dom@17.0.0/dev.index.js": "sha384-aXY4KO6iA0Zb41YTFkV2cVsKafk4DiiksnE97768LXtZidU/HnB5LYL9725v9Ksw",
+    "https://cdn.example.com/deps/npm:react@17.0.0/cjs/dev.react.development.js": "sha384-HStEslgnosSd15d5hs9LNsbUb2gDNL1dVDl8xVpIjM3UCc8WjUphSg3oyGLI8sjm",
+    "https://cdn.example.com/deps/npm:react@17.0.0/dev.index.js": "sha384-X8NBRDFZMbZO1Q5UEe+S+jU2F/TGWPNWBcTdzeEhfbbuk9rBzU1+/c6tsqxvE3BG",
+    "https://cdn.example.com/deps/npm:scheduler@0.20.2/_/b59585b3.js": "sha384-aPA2DgvtbHjaEfNi8sO1P0f4Dk2mfuYVDQm1TB0PbVph5kwqgq8V7wsL5G6nqVol",
+    "https://cdn.example.com/deps/npm:scheduler@0.20.2/dev.index.js": "sha384-qF0Jy83btjdPADN4QLKKmk/aUUyJnDqT+kYomKiUQk4nWrBsHVkM67Pua+8nHYUt",
+    "https://cdn.example.com/deps/npm:scheduler@0.20.2/dev.tracing.js": "sha384-2F0quaGupcgfUEwIGZsencGJp4bSamvXDI8mjsLg9ZXJeDDmGAL6US1H/ZLFGDpP"
+  }
+}"
+`;
+
+exports[`scoped microfrontend dependencies 2`] = `Promise {}`;
+
+exports[`writes an import map and dependencies to the file system 1`] = `
+"{
+  "imports": {
+    "react": "https://cdn.example.com/deps/npm:react@18.3.0/dev.index.js",
+    "react-dom": "https://cdn.example.com/deps/npm:react-dom@18.3.0/dev.index.js"
+  },
+  "scopes": {
+    "https://cdn.example.com/deps/": {
+      "scheduler": "https://cdn.example.com/deps/npm:scheduler@0.23.2/dev.index.js"
+    }
+  },
+  "integrity": {
+    "https://cdn.example.com/deps/npm:react-dom@18.3.0/_/hZ0Hd0FS.js": "sha384-wtEbXP4B7Gl5fUVIN7xE2UNOcdbjiNLtkyBx4QFpyk6/HQXz0yErwNlwpi+JwKio",
+    "https://cdn.example.com/deps/npm:react-dom@18.3.0/dev.index.js": "sha384-RlA1cs4/0fqgNMuo0f8Af1dWFwZUSBaF6F+UgrlQFXjv0em+AZI16QhG96aNaygO",
+    "https://cdn.example.com/deps/npm:react@18.3.0/dev.index.js": "sha384-FqpzZfi2YeXImQD1xnS/wUNXnRBozQ7uHQmvA6RXbLiApqeXvNFSGQ8coq4Twfmd",
+    "https://cdn.example.com/deps/npm:scheduler@0.23.2/dev.index.js": "sha384-RmHcVPSidbQWYik0CCkT1HaH1CbRQB1Z+/gt66Og9IhFxSqa4PNvCBUneAQl0I1R"
+  }
+}"
+`;
+
+exports[`writes an import map and dependencies to the file system 2`] = `Promise {}`;

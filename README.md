@@ -1,2 +1,3 @@
-# import-map-template
-Simplified import map dependency management
+# import-map-microfrontend-deps
+
+Simplified dependency management for microfrontends

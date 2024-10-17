@@ -10,6 +10,9 @@ importers:
       "@jspm/generator":
         specifier: ^2.4.1
         version: 2.4.1
+      "@single-spa/import-map-microfrontend-utils":
+        specifier: ^2.0.0
+        version: 2.0.0
       "@types/node":
         specifier: ^22.7.5
         version: 22.7.5
@@ -709,6 +712,12 @@ packages:
       }
     cpu: [x64]
     os: [win32]
+
+  "@single-spa/import-map-microfrontend-utils@2.0.0":
+    resolution:
+      {
+        integrity: sha512-6aX9xqGKP8uR8XhrEUutFKLYURkdHC4DyP7//PqD1Xgl8Z2/gXg6j4iO6Oj5NH7/TLqDd4M0UztcB36PISmc4g==,
+      }
 
   "@tootallnate/once@1.1.2":
     resolution:
@@ -2446,6 +2455,8 @@ snapshots:
 
   "@rollup/rollup-win32-x64-msvc@4.24.0":
     optional: true
+
+  "@single-spa/import-map-microfrontend-utils@2.0.0": {}
 
   "@tootallnate/once@1.1.2": {}
 

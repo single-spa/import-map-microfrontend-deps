@@ -2,6 +2,7 @@ import { beforeEach, test, vi, expect } from "vitest";
 import { buildImportMapDependencies } from "./import-map-microfrontend-deps";
 import { ImportMapMicrofrontendUtils } from "@single-spa/import-map-microfrontend-utils";
 import { vol, fs } from "memfs";
+import path from "path";
 
 vi.mock("node:fs/promises");
 
@@ -57,7 +58,8 @@ test(`scoped microfrontend dependencies`, async () => {
     await fs.readFileSync("./dist/deps.importmap", "utf-8"),
   ).toMatchSnapshot();
 
-  expect(
-    await fs.readdirSync("./dist/deps", { recursive: true }),
-  ).toMatchSnapshot();
+  const files = (await fs.readdirSync("./dist/deps", { recursive: true })).map(
+    (file) => path.relative(process.cwd(), file),
+  );
+  expect(files).toMatchSnapshot();
 });

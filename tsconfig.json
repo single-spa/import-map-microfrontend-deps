@@ -1,0 +1,9 @@
+{
+  "files": ["src/import-map-microfrontend-deps.ts"],
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "lib",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
+  }
+}

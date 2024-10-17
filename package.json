@@ -39,5 +39,6 @@
   "dependencies": {
     "@jspm/generator": "^2.4.1",
     "@types/node": "^22.7.5"
-  }
+  },
+  "packageManager": "pnpm@9.12.2"
 }

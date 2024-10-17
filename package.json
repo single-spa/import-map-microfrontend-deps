@@ -9,6 +9,9 @@
       "types": "./lib/import-map-microfrontend-deps.d.ts"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rimraf lib",
     "build": "tsc",

@@ -11,11 +11,11 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "build": "pnpm clean && tsc",
-    "lint": "eslint src",
+    "build": "tsc",
     "check-format": "prettier --check .",
     "format": "prettier --write .",
     "test": "vitest",
+    "prepublishOnly": "pnpm clean && pnpm build",
     "prepare": "husky"
   },
   "files": [

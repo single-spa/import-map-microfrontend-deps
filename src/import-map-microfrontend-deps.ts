@@ -30,7 +30,7 @@ export async function buildImportMapDependencies(
   const importMapGenerator = new Generator(generatorOptions);
 
   // Install shared dependencies into import map
-  console.log("Creating import map");
+  console.log("Creating import map from template", template);
   for (const importMapKey in template.imports) {
     await importMapGenerator.install(
       processImportMapEntry(importMapKey, template.imports[importMapKey]),
@@ -54,6 +54,10 @@ export async function buildImportMapDependencies(
   }
 
   const finalMap = importMapGenerator.getMap();
+  if (!finalMap.imports) {
+    finalMap.imports = {};
+  }
+
   if (!finalMap.scopes) {
     finalMap.scopes = {};
   }

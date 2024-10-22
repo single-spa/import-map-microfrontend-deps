@@ -1,6 +1,6 @@
 {
   "name": "@single-spa/import-map-microfrontend-deps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplified import map dependency management",
   "type": "module",
   "exports": {

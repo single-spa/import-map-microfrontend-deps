@@ -1,5 +1,27 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`react-microfrontends shared-dependencies example 1`] = `
+"{
+  "imports": {
+    "react": "https://cdn.example.com/deps/npm:react@18.3.1/dev.index.js",
+    "react-dom": "https://cdn.example.com/deps/npm:react-dom@18.3.1/dev.index.js",
+    "single-spa": "https://cdn.example.com/deps/npm:single-spa@7.0.0-beta.1/lib/esm/single-spa.min.js"
+  },
+  "scopes": {
+    "https://cdn.example.com/deps/": {
+      "scheduler": "https://cdn.example.com/deps/npm:scheduler@0.23.2/dev.index.js"
+    }
+  },
+  "integrity": {
+    "https://cdn.example.com/deps/npm:react-dom@18.3.1/_/x0Ig3rx3.js": "sha384-EBKaweLpike5GnLIJjFc5EgMCzNVXqz3mlfLOUli0pd5WA7qS21wr+wP0ar5r3uT",
+    "https://cdn.example.com/deps/npm:react-dom@18.3.1/dev.index.js": "sha384-Dpx2Tn3kwjhe7aUFDHyXP5v6fWn7+OdbEh2yfH5LGgkUTDMvN0ItvRESSokk6MBi",
+    "https://cdn.example.com/deps/npm:react@18.3.1/dev.index.js": "sha384-wbPd6+Ou8GqwACkwtlg9YcCULMS0mk09jHBKA2Ju+a6AtqHnLu2q1tGXiNJ2KtLA",
+    "https://cdn.example.com/deps/npm:scheduler@0.23.2/dev.index.js": "sha384-RmHcVPSidbQWYik0CCkT1HaH1CbRQB1Z+/gt66Og9IhFxSqa4PNvCBUneAQl0I1R",
+    "https://cdn.example.com/deps/npm:single-spa@7.0.0-beta.1/lib/esm/single-spa.min.js": "sha384-Rj+2qkB/fPRp10K5Qd5VFdGyLaNZ56kGu2wU8ZGGmSPIpvUHibuicpYewaLJBl/V"
+  }
+}"
+`;
+
 exports[`scoped microfrontend dependencies 1`] = `
 "{
   "imports": {
@@ -32,7 +54,35 @@ exports[`scoped microfrontend dependencies 1`] = `
 }"
 `;
 
-exports[`scoped microfrontend dependencies 2`] = `Promise {}`;
+exports[`scoped microfrontend dependencies 2`] = `
+[
+  "deps",
+  "deps.importmap",
+  "deps/npm:object-assign@4.1.1",
+  "deps/npm:object-assign@4.1.1/index.js",
+  "deps/npm:react-dom@17.0.0",
+  "deps/npm:react-dom@17.0.0/cjs",
+  "deps/npm:react-dom@17.0.0/cjs/dev.react-dom.development.js",
+  "deps/npm:react-dom@17.0.0/dev.index.js",
+  "deps/npm:react-dom@18.3.0",
+  "deps/npm:react-dom@18.3.0/_",
+  "deps/npm:react-dom@18.3.0/_/hZ0Hd0FS.js",
+  "deps/npm:react-dom@18.3.0/dev.index.js",
+  "deps/npm:react@17.0.0",
+  "deps/npm:react@17.0.0/cjs",
+  "deps/npm:react@17.0.0/cjs/dev.react.development.js",
+  "deps/npm:react@17.0.0/dev.index.js",
+  "deps/npm:react@18.3.0",
+  "deps/npm:react@18.3.0/dev.index.js",
+  "deps/npm:scheduler@0.20.2",
+  "deps/npm:scheduler@0.20.2/_",
+  "deps/npm:scheduler@0.20.2/_/b59585b3.js",
+  "deps/npm:scheduler@0.20.2/dev.index.js",
+  "deps/npm:scheduler@0.20.2/dev.tracing.js",
+  "deps/npm:scheduler@0.23.2",
+  "deps/npm:scheduler@0.23.2/dev.index.js",
+]
+`;
 
 exports[`writes an import map and dependencies to the file system 1`] = `
 "{
@@ -54,4 +104,17 @@ exports[`writes an import map and dependencies to the file system 1`] = `
 }"
 `;
 
-exports[`writes an import map and dependencies to the file system 2`] = `Promise {}`;
+exports[`writes an import map and dependencies to the file system 2`] = `
+[
+  "deps",
+  "deps.importmap",
+  "deps/npm:react-dom@18.3.0",
+  "deps/npm:react-dom@18.3.0/_",
+  "deps/npm:react-dom@18.3.0/_/hZ0Hd0FS.js",
+  "deps/npm:react-dom@18.3.0/dev.index.js",
+  "deps/npm:react@18.3.0",
+  "deps/npm:react@18.3.0/dev.index.js",
+  "deps/npm:scheduler@0.23.2",
+  "deps/npm:scheduler@0.23.2/dev.index.js",
+]
+`;

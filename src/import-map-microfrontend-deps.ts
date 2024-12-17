@@ -131,7 +131,5 @@ function processImportMapEntry(
     result.subpath = `./${splitKey.slice(extraSlashes).join("/")}`;
   }
 
-  console.log("result", importMapKey, extraSlashes, result);
-
   return result;
 }

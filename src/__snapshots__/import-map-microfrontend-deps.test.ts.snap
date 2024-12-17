@@ -1,5 +1,56 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`react-dom/client 1`] = `
+"{
+  "imports": {
+    "react": "https://cdn.example.com/deps/npm:react@19.0.0/dev.index.js",
+    "react-dom": "https://cdn.example.com/deps/npm:react-dom@19.0.0/dev.index.js",
+    "react-dom/client": "https://cdn.example.com/deps/npm:react-dom@19.0.0/dev.client.js",
+    "single-spa": "https://cdn.example.com/deps/npm:single-spa@7.0.0-beta.1/lib/esm/single-spa.min.js"
+  },
+  "scopes": {
+    "https://cdn.example.com/deps/": {
+      "process": "https://cdn.example.com/deps/npm:@jspm/core@2.1.0/nodelibs/browser/process.js",
+      "scheduler": "https://cdn.example.com/deps/npm:scheduler@0.25.0/dev.index.js"
+    }
+  },
+  "integrity": {
+    "https://cdn.example.com/deps/npm:@jspm/core@2.1.0/nodelibs/browser/process.js": "sha384-PQF/4kRYk/HIC4m+5NogCbnPrIPE6CBHm9LDDlVaOAOs5cH1UdCgG/FLBHOtaLvK",
+    "https://cdn.example.com/deps/npm:react-dom@19.0.0/dev.client.js": "sha384-Qu/udpK+Om55dG+piAAY8tOW9p6/kyK7Xn8jrm9yc6tbjRni77L1ui6UdiHyFAOb",
+    "https://cdn.example.com/deps/npm:react-dom@19.0.0/dev.index.js": "sha384-5F/J8tlWXUNSbjApuQR+dmjmzrWD2pdXTxzS8VMapg29TFvS2VAEIjcDei2JbyBG",
+    "https://cdn.example.com/deps/npm:react@19.0.0/dev.index.js": "sha384-lduOR1skezf3O1UoVPVZdAsSciDuzr2atTacvB9RVw8soREG57jRS4ZS2EZUygus",
+    "https://cdn.example.com/deps/npm:scheduler@0.25.0/cjs/dev.scheduler.development.js": "sha384-ihq5pOD+WXd4z0jHVfK2uBlCVT4L3GvKJ6h0K8vAor7qWjGNFf7lAlD3NT6zKVqk",
+    "https://cdn.example.com/deps/npm:scheduler@0.25.0/dev.index.js": "sha384-LPfgDL1GvUw25toLC/qNxX5DQH0eQfJOBbvufYS1hbnqIIek2NHoK59LeBtGezGd",
+    "https://cdn.example.com/deps/npm:single-spa@7.0.0-beta.1/lib/esm/single-spa.min.js": "sha384-Rj+2qkB/fPRp10K5Qd5VFdGyLaNZ56kGu2wU8ZGGmSPIpvUHibuicpYewaLJBl/V"
+  }
+}"
+`;
+
+exports[`react-dom/client 2`] = `
+[
+  "deps",
+  "deps.importmap",
+  "deps/npm:@jspm",
+  "deps/npm:@jspm/core@2.1.0",
+  "deps/npm:@jspm/core@2.1.0/nodelibs",
+  "deps/npm:@jspm/core@2.1.0/nodelibs/browser",
+  "deps/npm:@jspm/core@2.1.0/nodelibs/browser/process.js",
+  "deps/npm:react-dom@19.0.0",
+  "deps/npm:react-dom@19.0.0/dev.client.js",
+  "deps/npm:react-dom@19.0.0/dev.index.js",
+  "deps/npm:react@19.0.0",
+  "deps/npm:react@19.0.0/dev.index.js",
+  "deps/npm:scheduler@0.25.0",
+  "deps/npm:scheduler@0.25.0/cjs",
+  "deps/npm:scheduler@0.25.0/cjs/dev.scheduler.development.js",
+  "deps/npm:scheduler@0.25.0/dev.index.js",
+  "deps/npm:single-spa@7.0.0-beta.1",
+  "deps/npm:single-spa@7.0.0-beta.1/lib",
+  "deps/npm:single-spa@7.0.0-beta.1/lib/esm",
+  "deps/npm:single-spa@7.0.0-beta.1/lib/esm/single-spa.min.js",
+]
+`;
+
 exports[`react-microfrontends shared-dependencies example 1`] = `
 "{
   "imports": {

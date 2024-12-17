@@ -1,4 +1,4 @@
-import { Generator } from "@jspm/generator";
+import { Generator, Install } from "@jspm/generator";
 import { writeFile, mkdir } from "node:fs/promises";
 import { dirname } from "node:path";
 import { ImportMapMicrofrontendUtils } from "@single-spa/import-map-microfrontend-utils";
@@ -116,6 +116,22 @@ export async function buildImportMapDependencies(
   }
 }
 
-function processImportMapEntry(importMapKey, importMapValue) {
-  return `${importMapKey}@${importMapValue}`;
+function processImportMapEntry(
+  importMapKey: string,
+  importMapValue: string,
+): Install {
+  const splitKey = importMapKey.split("/");
+  const extraSlashes = splitKey.length - (importMapKey.startsWith("@") ? 2 : 1);
+
+  const result: Install = {
+    target: `${splitKey.slice(0, splitKey.length - extraSlashes).join("/")}@${importMapValue}`,
+  };
+
+  if (extraSlashes > 0) {
+    result.subpath = `./${splitKey.slice(extraSlashes).join("/")}`;
+  }
+
+  console.log("result", importMapKey, extraSlashes, result);
+
+  return result;
 }
